@@ -44,20 +44,11 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-orange.min.css" />
     <link rel="stylesheet" href="styles.css">
     <style>
-    /* a fixed element on the page */
-    #bottom-right-corner {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
     /* This is the image for the title bar on the labs-card */
     .labs-card > .mdl-card__title {
       background: url('images/lecture.jpg') center / cover;
     }
+
     /* Adds the  graphic to the top of the page */
     .page-head-layout-transparent {
       background: url('images/header.jpg') center / cover;
@@ -77,7 +68,7 @@
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <!-- Top of page some elements go when on a smaller screen -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <!-- removes the top graphic <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary"> -->
+      <!-- removes the top graphic -->
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary mdl-layout__header--transparent page-head-layout-transparent">
         <div class="mdl-layout__header-row">
         </div>
@@ -91,20 +82,21 @@
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
-          <a href="#labs"     class="mdl-layout__tab">The Labs</a>
-          <a href="#staff" class="mdl-layout__tab">Our Staff</a>
+          <a href="#labs"     class="mdl-layout__tab">Labs</a>
+          <a href="#staff" class="mdl-layout__tab">Staff</a>
           <a href="#preparation" class="mdl-layout__tab">Preparation</a>
-          <a href="#faq" class="mdl-layout__tab">FAQ</a>
         </div>
       </header>
       <main class="mdl-layout__content">
         <!-- Overview section -->
         <div class="mdl-layout__tab-panel is-active" id="overview">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--primary-dark mdl-color-text--white">
-              <h4>Welcome</h4>
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+            <div class="mdl-card--title mdl-cell mdl-cell--3-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-color--primary-dark mdl-color-text--white">
+              <div class="mdl-card__title mdl-color--primary-dark">
+                 <h1 class="mdl-card__title-text  mdl-color-text--white">Welcome</h1>
+              </div>
+            </div>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
 
                 <p>Welcome to the Computer Science department of Lincoln College, this site is here to help you find out about the department before you join us.</p>
@@ -121,7 +113,7 @@
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
                 <h4>What is Computer Science</h4>
-                <p>If you want to study with us, it is important that you understand the difference between Computer Science and Information Technology</p>
+                <p>If you want to study with us, it is important that you understand the difference between Computer Science and Information Technology so you are sure the course you select is the correct one for you.</p>
                 <h5>Computer Science</h5>
                 <p>Students of Computer Science typically want to create and design software or systems to allow others to achieve a goal.  The focus of their studies will include learning how a computer works and how to program or configure it to perform new tasks by creating custom solutions i.e. a new program/app or building a computer network or system.  Computer Science students are commonly know as computer practitioners.</p>
                 <h5>Information Technology</h5>
@@ -135,7 +127,6 @@
             </div>
           </section>
         </div>
-
         <!-- Labs section -->
         <div class="mdl-layout__tab-panel" id="labs">
           <!-- basic information bar at top of page -->
@@ -268,44 +259,6 @@
           </section>
 
         </div> <!-- End of Labs section -->
-        <!-- FAQ section -->
-        <div class="mdl-layout__tab-panel" id="faq">
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <div class="mdl-cell mdl-cell--12-col">
-              <h4>Features</h4>
-              Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-              <ul class="toc">
-                <h4>Contents</h4>
-                <a href="#lorem1">Lorem ipsum</a>
-                <a href="#lorem2">Lorem ipsum</a>
-                <a href="#lorem3">Lorem ipsum</a>
-                <a href="#lorem4">Lorem ipsum</a>
-                <a href="#lorem5">Lorem ipsum</a>
-              </ul>
-
-              <h5 id="lorem1">Lorem ipsum dolor sit amet</h5>
-              Excepteur et pariatur officia veniam anim culpa cupidatat consequat ad velit culpa est non.
-              <ul>
-                <li>Nisi qui nisi duis commodo duis reprehenderit consequat velit aliquip.</li>
-                <li>Dolor consectetur incididunt in ipsum laborum non et irure pariatur excepteur anim occaecat officia sint.</li>
-                <li>Lorem labore proident officia excepteur do.</li>
-              </ul>
-
-              <p>Sit qui e Nostrud voluptate</p>
-              <p>Do</p>
-              <p id="lorem2">Tempor qui incididunt aliqua</p>
-              <p>Eu minim f</p>
-              <p>Id occae</p>
-
-              <h5 id="lorem3">Lorem ipsum dolor sit amet</h5>
-
-              <p id="lorem4">Eiusmod nulla</p>
-              <p id="lorem5">Nisi eiusmod e</p>
-              <p>Enim ea offi</p>
-              <p>Cupidatat labore nisi ut sunt</p>
-            </div>
-          </section>
-        </div>
         <!-- Staff section -->
         <div class="mdl-layout__tab-panel" id="staff">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
@@ -365,55 +318,53 @@
         </div>
         <!-- Preparation section -->
         <div class="mdl-layout__tab-panel" id="preparation">
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-              <div class="mdl-card mdl-cell mdl-cell--12-col">
-                <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                  <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
-                  <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                    <div class="section__circle-container__circle mdl-color--primary"></div>
-                  </div>
-                  <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                    <h5>Lorem ipsum dolor sit amet</h5>
-                    Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                  </div>
-                </div>
-                <div class="mdl-card__actions">
-                  <a href="#" class="mdl-button">Read our features</a>
-                </div>
+          <section class="section--center mdl-grid ">
+            <!-- Introduction -->
+            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--6-col-phone mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-color--primary-dark">
+                 <h1 class="mdl-card__title-text  mdl-color-text--white">Preparing for study</h1>
               </div>
-            </section>
+              <div class="mdl-card__supporting-text">
+                 <p>Starting a new course at college can be a confusing experience, you are potentially new to the subject taught or not fully sure as to what you might need to learn at home as well as at college.</p>
+                 <p>Where possible we always encourage new students to be ready to start learning from day one, all our courses require you to complete your assignments in your own time and we try to provide you with the software you need to complete the course without spending money</p>
+                 <p>You do need a computer at home and we generally work on PC's in the college so if you intend to us a Apple Mac it would be advisable to install a version of windows on it as well</p>
+              </div>
+            </div>
+            <!--HTML -->
+            <div class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp">
+            	<div class="mdl-card__title mdl-color--teal-100">
+            		<h1 class="mdl-card__title-text">Learning HTML</h1>
+            	</div>
+            	<div class="mdl-card__supporting-text">
+            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam accusamus, consectetur.</p>
+            	</div>
+            	<div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>
+            	</div>
+            </div>
+            <!--Programming -->
+            <div class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp">
+            	<div class="mdl-card__title mdl-color--teal-100">
+            		<h1 class="mdl-card__title-text">Learning Programming</h1>
+            	</div>
+              <div class="mdl-card__supporting-text">
+            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam accusamus, consectetur.</p>
+            	</div>
+            	<div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>
+            	</div>
+            </div>
           </section>
         </div>
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Features</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Updates</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">FAQ</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Answers</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="mdl-mega-footer--bottom-section">
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
             <div class="mdl-logo">
               More Information
             </div>
-            <ul class="mdl-mega-footer--link-list">
-              <li><a href="https://material.io/guidelines/material-design/introduction.html">Developed using Google Material Design</a></li>
+            <ul class="mdl-mini-footer__link-list">
               <li><a href="#">Help</a></li>
               <li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>
             </ul>
           </div>
         </footer>
