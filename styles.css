@@ -36,7 +36,7 @@ html, body {
   overflow: visible;
 }
 .mdl-demo .mdl-layout__tab-bar-container {
-  height: 64px;
+  height: 48px;
 }
 .mdl-demo .mdl-layout__tab-bar {
   padding: 0;
@@ -46,16 +46,16 @@ html, body {
   width: 100%;
 }
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab {
-  height: 64px;
-  line-height: 64px;
+  height: 48px;
+  line-height: 48px;
 }
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
   background-color: white;
   height: 4px;
 }
 .mdl-demo main > .mdl-layout__tab-panel {
-  padding: 8px;
-  padding-top: 48px;
+  padding: 4px;
+  padding-top: 36px;
 }
 .mdl-demo .mdl-card {
   height: auto;
@@ -113,9 +113,7 @@ html, body {
 .mdl-demo section.section--center {
   max-width: 860px;
 }
-.mdl-demo #features section.section--center {
-  max-width: 620px;
-}
+
 .mdl-demo section > header{
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -127,9 +125,7 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.mdl-demo section > .section__play-btn {
-  min-height: 200px;
-}
+
 .mdl-demo section > header > .material-icons {
   font-size: 3rem;
 }
@@ -164,10 +160,12 @@ html, body {
       -ms-flex-negative: 0;
           flex-shrink: 0;
   padding-top: 8px;
+  padding-left: 0.5em;
 }
 .mdl-demo section .section__text h5 {
   font-size: inherit;
   margin: 0;
+
   margin-bottom: 0.5em;
 }
 .mdl-demo section .section__text a {
@@ -177,8 +175,23 @@ html, body {
   width: 64px;
   height: 64px;
   border-radius: 32px;
-  margin: 8px 0;
+  margin: 8px 0px;
 }
+
+.mdl-demo section .section__circle-container >  .section__circle--big {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 18px 8px;
+}
+
+.mdl-demo .is-small-screen section .section__circle-container >  .section__circle--big {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  margin: 8px 4px;
+}
+
 .mdl-demo section.section--footer .section__circle--big {
   width: 100px;
   height: 100px;
@@ -204,12 +217,7 @@ html, body {
 .mdl-demo .mdl-layout__tab-panel:not(#overview) {
   background-color: white;
 }
-.mdl-demo #features section {
-  margin-bottom: 72px;
-}
-.mdl-demo #features h4, #features h5 {
-  margin-bottom: 16px;
-}
+
 .mdl-demo .toc {
   border-left: 4px solid #C1EEF4;
   margin: 24px;
